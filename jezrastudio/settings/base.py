@@ -59,13 +59,15 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     # "example.apps.AccountsConfig",
+    "portfolio.apps.PortfolioConfig",
 ]
 
+INSTALLED_APPS: list = []
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # --- End of Application Definition ---
 
 # New Default User
-# AUTH_USER_MODEL = 'accounts.CustomUser' to be added
+# AUTH_USER_MODEL = 'accounts.CustomUser' may be added
 
 # Project Middleware
 
@@ -97,7 +99,7 @@ DATABASES = {
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # noqa
+        'DIRS': [BASE_DIR / 'jezrastudio/templates'],  # noqa
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
