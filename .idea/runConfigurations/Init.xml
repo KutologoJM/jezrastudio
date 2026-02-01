@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Init" type="CompoundRunConfigurationType">
+    <toRun name="jezrastudio" type="Python.DjangoServer" />
+    <toRun name="Tailwind Watcher" type="ShConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>
