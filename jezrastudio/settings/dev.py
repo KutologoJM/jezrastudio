@@ -3,10 +3,13 @@ from .base import *  # noqa: F403
 
 DEBUG = os.getenv("DEBUG_DEV")
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(",")
+
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+CSRF_TRUSTED_ORIGINS = os.getenv("CSRF_TRUSTED_ORIGINS").split(",")
 
 INSTALLED_APPS += ["debug_toolbar", "django_browser_reload", "django_watchfiles", ]  # noqa: F405
 

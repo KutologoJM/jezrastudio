@@ -1,0 +1,50 @@
+{% extends "portfolio_base.html" %}
+{% load static %}
+{% block head_title %} Homepage {% endblock %}
+{% block extra_head_element %} {% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block navbar_title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+    <section class="prose-xl">
+        <!-- Visible on small screens, medium and up -->
+        <div class="block md:hidden">
+            This div is visible on small screens
+        </div>
+        <!-- Visible on medium screens, hidden on small, large and up -->
+        <div class="hidden md:block lg:hidden">
+            This div is visible on medium screens
+        </div>
+
+        <!-- Hidden on small and medium screens, visible on large and up -->
+        <div class="hidden lg:block">
+            This div is visible on large screens and above
+        </div>
+    </section>
+{% endblock %}
+
+{% block dock %}
+    {% include 'components/home_dock.html' %}
+{% endblock %}
+
+{% comment %}
+         <!-- Visible on small screens, medium and up -->
+        <div class="block md:hidden">
+            This div is visible on small screens
+        </div>
+        <!-- Visible on medium screens, hidden on small, large and up -->
+        <div class="hidden md:block lg:hidden">
+            This div is visible on medium screens
+        </div>
+
+        <!-- Hidden on small and medium screens, visible on large and up -->
+        <div class="hidden lg:block">
+            This div is visible on large screens and above
+        </div>
+        {% endcomment %}
+{# styling - bg-base-100 border border-base-300 #}
