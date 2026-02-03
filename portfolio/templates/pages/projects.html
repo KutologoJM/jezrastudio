@@ -6,6 +6,154 @@
     Projects
 {% endblock %}
 {% block header %}{% endblock %}
-{% block main %} {% endblock %}
+{% block main %}
+    <main class="container mx-auto p-4">
+        <h1 id="Projects-heading" class="text-5xl m-4 text-center">
+            Projects: <i class="fa-solid fa-laptop-code"></i>
+        </h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <section class="">
+                <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border">
+                    <div class="collapse-title font-semibold"></div>
+                    <div class="collapse-content">
+                        <div>
+                            <div id="information-container">
+                                <h2 class="text-4xl font-bold text-center">
+                                    <a href="https://github.com/kutologojm/utilities-not-included/"
+                                       class="hover:cursor-pointer hover:link">
+                                        Utilities Not Included
+                                    </a>
+                                </h2>
+
+
+                                <div id="languages-and-tools" class="grid grid-cols-1 md:grid-cols-2 m-4">
+                                    <div class="bg-base-100 border-base-300 border-2 rounded-2xl p-2 m-2">
+                                        <h4 class="text-2xl font-bold text-center">
+                                            Languages
+                                        </h4>
+                                        <div class="avatar-group aspace-x-6 justify-center items-center">
+                                            <div class="avatar">
+                                                <div class="w-12">
+                                                    <img src="{% static 'images/django-icon.png' %}" alt="Django"/>
+                                                </div>
+                                            </div>
+                                            <div class="avatar">
+                                                <div class="w-12">
+                                                    <img src="{% static 'images/python-original.png' %}" alt="Python"/>
+                                                </div>
+                                            </div>
+                                            <div class="avatar">
+                                                <div class="w-12">
+                                                    <img src="{% static 'images/html5-original.png' %}" alt="Html"/>
+                                                </div>
+                                            </div>
+                                            <div class="avatar">
+                                                <div class="w-12">
+                                                    <img src="{% static 'images/htmx.png' %}" class="bg-white"
+                                                         alt="htmx"/>
+                                                </div>
+                                            </div>
+                                            <div class="avatar">
+                                                <div class="w-12">
+                                                    <img src="{% static 'images/tailwindcss-original.png' %}"
+                                                         class="bg-white" alt="tailwindcss"/></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="bg-base-100 border-base-300 border-2 rounded-2xl p-2 m-2">
+                                        <h4 class="text-2xl font-bold text-center">
+                                            Tools
+                                        </h4>
+                                        <div class="avatar-group aspace-x-6 justify-center items-center">
+                                            <div class="avatar">
+                                                <div class="w-12">
+                                                    <img src="{% static 'images/uv.png' %}" alt="uv"/>
+                                                </div>
+                                            </div>
+                                            <div class="avatar">
+                                                <div class="w-12">
+                                                    <img src="{% static 'images/pycharm.png' %}" alt="PyCharm"/></div>
+                                            </div>
+                                            <div class="avatar">
+                                                <div class="w-12 bg-white">
+                                                    <img src="{% static 'images/github-dark.png' %}" alt="GitHub"/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="text-3xl font-bold text-center  rounded-xl my-4">
+                                    Utility and Management Apps
+                                </h3>
+                            </div>
+
+                            <div id="app-container" class="grid grid-cols-2 2xl:grid-cols-3 gap-4">
+
+                                <div class="card card-sm md:card-md card-border bg-base-100 border-base-300">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Food Manager</h2>
+                                        <p>A card component has a figure, a body part, and inside body there are title
+                                            and
+                                            actions
+                                            parts</p>
+                                        <div class="card-actions justify-end">
+                                            <button class="btn btn-primary btn-sm md:btn-md ">View Docs</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-sm md:card-md card-border bg-base-100 border-base-300">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Ranching Utility</h2>
+                                        <p>A card component has a figure, a body part, and inside body there are title
+                                            and
+                                            actions
+                                            parts</p>
+                                        <div class="card-actions justify-end">
+                                            <button class="btn btn-primary btn-sm md:btn-md ">View Docs</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-sm md:card-md card-border bg-base-100 border-base-300">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Power Manager</h2>
+                                        <p>A card component has a figure, a body part, and inside body there are title
+                                            and
+                                            actions
+                                            parts</p>
+                                        <div class="card-actions justify-end">
+                                            <button class="btn btn-primary btn-sm md:btn-md ">View Docs</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-sm md:card-md card-border bg-base-100 border-base-300">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Farming Utility</h2>
+                                        <p>A card component has a figure, a body part, and inside body there are title
+                                            and
+                                            actions
+                                            parts</p>
+                                        <div class="card-actions justify-end">
+                                            <button class="btn btn-primary btn-sm md:btn-md ">View Docs</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+{% endblock %}
 {% block footer %}{% endblock %}
-{% block dock %}{% endblock %}
+{% block dock %}
+    {% include 'components/dock.html' %}
+{% endblock %}

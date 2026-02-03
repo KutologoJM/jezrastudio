@@ -3,11 +3,11 @@
 {% block head_title %} Homepage {% endblock %}
 {% block extra_head_element %} {% endblock %}
 
-{% block header %}
-{% endblock %}
-
 {% block navbar_title %}
     Homepage
+{% endblock %}
+
+{% block header %}
 {% endblock %}
 
 {% block main %}
@@ -26,8 +26,13 @@
             This div is visible on large screens and above
         </div>
     </section>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+    {% include 'partials/hero.html' %}
+    </main>
 {% endblock %}
 
+{% block footer %}{% endblock %}
 {% block dock %}
     {% include 'components/home_dock.html' %}
 {% endblock %}
