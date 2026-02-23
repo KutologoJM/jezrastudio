@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block main %}
-    <section class="prose-xl">
+    <section class="prose-xl hidden">
         <!-- Visible on small screens, medium and up -->
         <div class="block md:hidden">
             This div is visible on small screens
@@ -28,7 +28,12 @@
     </section>
 
     <main class="container mx-auto px-4 sm:px-6 lg:px-8">
-    {% include 'partials/hero.html' %}
+        {% include 'partials/hero.html' %}
+
+        {% include 'partials/pinned-projects.html' %}
+        {% include 'partials/latest-articles.html' %}
+        {% include 'partials/contact-me.html' %}
+
     </main>
 {% endblock %}
 
