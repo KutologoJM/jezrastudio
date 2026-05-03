@@ -15,6 +15,6 @@ dependencies = [
     "gunicorn==24.1.1",
     "psycopg2-binary>=2.9.11",
     "pytest==9.0.3",
-    "python-dotenv>=1.2.1",
+    "python-dotenv>=1.2.2",
     "whitenoise==6.11.0",
 ]
